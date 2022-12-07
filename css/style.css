@@ -5,9 +5,50 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+
+/* Naigation CSS*/
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: opx 5%;
+}
+
+nav h1 {
+  width: 25%;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+nav img {
+  width: 5%;
+  margin-left: 30px;
+}
+
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#navigation p {
+  margin: 0px 5%;
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div a img {
+  width: 10%;
+}
+
+
 
 h1,
 h2,
