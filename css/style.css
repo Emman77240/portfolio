@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 15px 7%;
+  margin: 15px 5%;
   /*border-bottom: 2px solid black;*/
 }
 
@@ -38,9 +38,9 @@ body {
 
 #navigation {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  margin-left: 150px;
 }
 
 #navigation p {
@@ -58,7 +58,7 @@ body {
   height: 70vh;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 60% 40%;
   grid-template-areas: 
   "profile profileImage";
 }
@@ -69,14 +69,13 @@ body {
 
 #profileImage {
   grid-area: profileImage;
-  margin-top: 100px;
-  width: 60%;
+  margin-top: 20px;
+  width: 70%;
 }
 
 .profileArea {
   display: flex;
   align-items: center;
-  margin-left: 50px;
 }
 
 #introduction {
@@ -85,9 +84,13 @@ body {
   color: #929297;
 }
 
+#headline {
+  margin-left: 10px;
+}
+
 #headline h2 {
   font-size: 60px;
-  width: 70%;
+  width: 80%;
   font-weight: 400;
   margin: 20px 0px;
 }
@@ -96,13 +99,105 @@ button {
   background-color: black;
   color: white;
   border: none;
-  padding: 15px 32px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-top: 50px;
-  border-radius: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Headline Section CSS*/
+.workHeadline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 7% 0;
+}
+
+.workHeadline h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  color: black;
+  border-bottom: 1.5px solid #949497;
+  padding-bottom: 10px;
+}
+
+.work-section {
+  height: 101vh;
+  background-color: rgb(243, 243, 243);
+  width: 60%;
+  margin: 0px auto;
+  border-radius: 12px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: 
+  "app1 app2"
+  "app3 app4";
+}
+
+.app1 {
+  grid-area: app1;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  margin-top: 50px;
+  margin-left: -50px;
+  border-radius: 12px;
+  border: 2px solid #e9e9eb;
+  cursor: pointer;
+}
+
+.app2 {
+  grid-area: app2;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 12px;
+  border: 2px solid #e9e9eb;
+  cursor: pointer;
+}
+
+.app4 {
+  grid-area: app4;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  margin-top: 100px;
+  margin-left: 50px;
+  border-radius: 12px;
+  border: 2px solid #e9e9eb;
+  cursor: pointer;
+}
+
+.app3 {
+  grid-area: app3;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  margin-top: 100px;
+  margin-left: -50px;
+  border-radius: 12px;
+  border: 2px solid #e9e9eb;
+  cursor: pointer;
+}
+.page-wrapper {
+  
 }
 
 h1,
