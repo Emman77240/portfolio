@@ -54,18 +54,56 @@
       <div class="app3">App3</div>
       <div class="app4">App4</div>
     </section>
+
+    <!-- about me -->
+    <section class="about-section" id="about">
+      <img src="images/Group 1profile4.jpg" alt="My image" class="aboutMeImage">
+      <div class="aboutMeTexts">
+        <h2 class="aboutMeHeader">About Me</h2>
+        <p>I am a web developer with a Master's degree in Cyber Security, who is passionate about Web Application Security. I am also experienced with designing functional user interfaces. Let's talk.</p>
+        <button>More about me</button>
+      </div>
+    </section>
     
   </main>
-  <!-- about me -->
-  <section class="about-section" id="about">
-    <h2>About Me</h2>
-    <p>I am a web developer with a Master's degree in Cyber Security, who is passionate about Web Application Security. Let's talk.</p>
-  </section>
+
    <!-- contact -->
-   <section class="page-section contact" id="contact">
-    <h2>Contact Me</h2>
-  </section>
-  <footer></footer>
+   <footer class="contactSection">
+    <h3 class="contact-form-h3">Got questions? Ask it below...</h3>
+    <div class="form-container" id="contact-form">  
+      <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="united kingdom">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="france">France</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="How may we serve you today..." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="footerContactArea">
+      <h3 class="contact-form-h3">Contact Me</h3>
+      <div class="myContact">
+        <img src="images/white_mail.png" alt="Mail Icon">
+        <p>bcudehen@gmail.com</p>
+      </div>
+      <div class="myContact">
+        <img src="images/phone.png" alt="Phone Icon">
+        <p>(44) 123-456-789</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

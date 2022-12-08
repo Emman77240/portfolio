@@ -127,10 +127,10 @@ button {
 }
 
 .work-section {
-  height: 101vh;
+  height: 89vh;
   background-color: rgb(243, 243, 243);
   width: 60%;
-  margin: 0px auto;
+  margin: 7% auto;
   border-radius: 12px;
   position: relative;
   display: grid;
@@ -148,7 +148,7 @@ button {
   height: 300px;
   background-color: white;
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: -50px;
   border-radius: 12px;
   border: 2px solid #e9e9eb;
@@ -162,7 +162,7 @@ button {
   height: 300px;
   background-color: white;
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 50px;
   border-radius: 12px;
   border: 2px solid #e9e9eb;
@@ -176,7 +176,7 @@ button {
   height: 300px;
   background-color: white;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 170px;
   margin-left: 50px;
   border-radius: 12px;
   border: 2px solid #e9e9eb;
@@ -190,14 +190,51 @@ button {
   height: 300px;
   background-color: white;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 170px;
   margin-left: -50px;
   border-radius: 12px;
   border: 2px solid #e9e9eb;
   cursor: pointer;
 }
-.page-wrapper {
-  
+
+
+/* About Section CSS*/
+.about-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80%;
+  grid-template-areas: 
+  "aboutMeImage aboutMeTexts";
+  height: 70vh;
+  margin: 12% 10%;
+}
+
+.aboutMeImage {
+  grid-area: aboutMeImage;
+  background-image: url("images/newbg.jpeg");
+  background-color: rgb(243, 243, 243);
+  width: 70%;
+  margin-left: 10%;
+  border-radius: 12px;
+}
+
+.aboutMeTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.aboutMeHeader {
+  font-size: 37px;
+  font-weight: lighter;
+  margin: 4% 0px;
+}
+
+.aboutMeTexts p {
+  font-size: 17px;
+  color: #929297;
+  font-weight: 300;
 }
 
 h1,
@@ -212,3 +249,97 @@ h6 {
 p {
   margin: 0;
 }
+
+/* Footer Contact CSS*/
+footer {
+  padding: 50px;
+  height: 100vh;
+  background-color: black;
+  color: #929297;
+  font-size: 14px;
+  font-weight: lighter;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 10% 80%;
+  grid-template-areas: 
+  "contact-form-h3 footerContactArea"
+  "form-container footerContactArea";
+}
+
+
+.footerContactArea {
+  grid-area: footerContactArea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #f2f2f2;
+border-radius: 12px;
+margin-top: 10px;
+margin-bottom: 15px;
+resize: vertical;
+font-size: 11px;
+background-color: rgb(244, 246, 246);
+}
+
+input[type=submit] {
+background-color: black;
+color: white;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+padding: 15px 40px;
+text-align: center;
+font-size: 12px;
+margin-top: 40px;
+}
+
+input[type=submit]:hover {
+background-color: #949497;
+color: black;
+}
+
+.form-container {
+  grid-area: form-container;
+  width: 75%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3%;
+}
+
+.contact-form-h3 {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #929297;margin-bottom: 20px;
+}
+
+/* Contact Me CSS Icons*/
+.footerContactArea img {
+  width: 6%;
+}
+
+.footerContactArea p {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.myContact {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footerContactArea {
+  margin-left: -150px;
+}
+
