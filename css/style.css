@@ -19,20 +19,19 @@ body {
 }
 
 #navBar h1 {
-  width: 70%;
+  width: 35%;
   font-size: 25px;
   font-weight: 400;
 }
 
 .icons img {
-  width: 3.5%;
-  margin: 0px 2%;
+  width: 25px;
+  margin: 0px 15px;
   cursor: pointer;
 }
 
 .icons {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -43,8 +42,13 @@ body {
   margin-left: 150px;
 }
 
-#navigation p {
-  margin: 0px 5%;
+#navigation a {
+  text-decoration: none;
+  margin: 0px 3%;
+}
+
+a:visited {
+  color: black;
 }
 
 .logo {
@@ -127,7 +131,7 @@ button {
 }
 
 .work-section {
-  height: 101vh;
+  height: 750px;
   background-color: rgb(243, 243, 243);
   width: 60%;
   margin: 7% auto;
