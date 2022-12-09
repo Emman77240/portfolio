@@ -51,6 +51,14 @@ a:visited {
   color: black;
 }
 
+a:hover {
+  color: #949497;
+}
+
+a:link {
+  color: black;
+}
+
 .logo {
   width: 5%;
 }
